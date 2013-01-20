@@ -1,0 +1,14 @@
+body {  
+    font: 14px/1.5 helvetica-neue, helvetica, arial, san-serif;  
+    padding:10px;  
+}  
+h1 {  
+    margin-top:0;  
+}  
+#main {  
+    width: 300px;  
+    margin:auto;  
+    background: #ececec;  
+    padding: 20px;  
+    border: 1px solid #ccc;  
+}  
