@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="style.css" /> 
     <SCRIPT>
 
-        var image = new Array("jpg","png","gif","bmp","ico");
-        var audio = new Array("mp3", "aac", "wav","ogg");
+        var image = new Array("jpg","png","gif","bmp","ico","svg");
+        var audio = new Array("mp3", "aac", "wav","ogg","m4a","wma");
         var video = new Array("3gp", "avi", "flv","mp4","mp3","mkv","wmv");
 
         function swapOptions(ArrayName){
@@ -40,6 +40,7 @@
                 <option class="opt2" name="gif">gif</option>
                 <option class="opt2" name="bmp">bmp</option>
                 <option class="opt2" name="ico">ico</option>
+                <option class="opt2" name="svg">svg</option>
             </select>
             <input type="file" name="upload_file" id="upload_file" />
             <button type="submit" id="btn">Convert File!</button>  
