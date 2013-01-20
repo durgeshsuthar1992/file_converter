@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />  
     <title>HTML5 File API</title>  
     <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link href="bootstrap.min.css" rel="stylesheet">
     <SCRIPT>
 
         var image = new Array("jpg","png","gif","bmp","ico","svg");
@@ -25,15 +27,15 @@
  
 </head>  
 <body>  
-    <div id="main">  
-        <h1>Upload Your File</h1>  
-        <form method="post" enctype="multipart/form-data" name="theForm" action="#">  
+    <div class="span9">  
+        <h1>Upload the file u want to convert </h1>  
+        <form method="post" enctype="multipart/form-data" name="theForm" action="#" class="form-horizontal well">  
               
     TYPE:   <select name="chooseCat" class="type" ONCHANGE="swapOptions(this.options[selectedIndex].text);" size="1">
                 <option selected="selected" class="opt" name="image">image</option>
                 <option class="opt" name="audio">audio</option>
                 <option class="opt" name="video">video</option>
-            </select>
+            </select></br></br>
         TO: <select class ="to" size="1" name="examples">
                 <option class="opt2" name="jpg">jpg</option>
                 <option class="opt2" name="png">png</option>
@@ -41,7 +43,7 @@
                 <option class="opt2" name="bmp">bmp</option>
                 <option class="opt2" name="ico">ico</option>
                 <option class="opt2" name="svg">svg</option>
-            </select>
+            </select></br></br>
             <input type="file" name="upload_file" id="upload_file" />
             <button type="submit" id="btn">Convert File!</button>  
         </form>  
