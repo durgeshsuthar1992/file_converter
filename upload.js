@@ -53,12 +53,13 @@
 		if (formdata) {
 			formdata.append("file", file);
 		}
+		var to = $(".opt2").attr("name");
 		
 		var queue_data = '';
 		queue_data += "<queue>";
 		queue_data += "		<token>"+queue_token+"</token>";
-		queue_data += "		<targetType>images</targetType>";
-		queue_data += "		<targetMethod>convert-to-png</targetMethod>";
+		queue_data += "		<targetType>"+$(".type option:selected").text()+"</targetType>";
+		queue_data += "		<targetMethod>convert-to-"+$(".to option:selected").text()+"</targetMethod>";
 		queue_data += "		<testMode>true</testMode>";
 		queue_data += "</queue>";
 
